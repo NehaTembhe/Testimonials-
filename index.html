@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Testimonial Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="text/main.CSS">
+</head>
+<body>
+ 
+    
+    <div class="carousel">
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="image 1.jpeg" alt="">
+                </div>
+                <p>Studypool helped me so much this semester. I was really struggling in my classes and the workload for my pre-med major was really intense. I couldn't always make it to the lectures so the tutors here helped me understand concepts I had missed.
+                </p>
+                <h4>Jessica Jones</h4>
+                <h5>- St. Louis, MO</h5>
+            </div>
+
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="image 2.jpeg" alt="">
+                </div>
+                <p>Amazing help editing my business plan for my marketing class. I got tips on where to improve and the tutor clearly had good business knowledge. They were really easy to work with. I'll definitely use them again.
+                </p>
+                <h4>Tania H. </h4>
+                <h>- Houston, TX</h5>
+            </div>
+
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="images 3.jpeg" alt="">
+                </div>
+                <p>I started using Studypool after a friend recommended it to me. It's perfect for those times when I'm stuck on something and need quick help. I can always find a tutor, regardless of what time of day it is.
+                    
+                </p>
+                <h4>Grace C.</h4>
+                <h5> - Knoxville, TN</h5>
+            </div>
+
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="image 4.jpeg" alt="">
+                </div>
+                <p>Studypool is perfect for SAT test prep. If you're like me and using books to study, the explanations in the books can be really confusing. My tutor on Studypool can explain it in a way I actually understand.
+                   
+                </p>
+                <h4>Sunil Tambe</h4>
+                <h5>-Mumbai</h5>
+            </div>
+
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="image 5.jpeg" alt="">
+                </div>
+                <p>
+                   This website is Amazing. If you're like me and using books to study, the explanations in the books can be really confusing. My tutor on Studypool can explain it in a way I actually understand.
+                </p>
+                <h4>Trithi Amin</h4>
+                <h5>-Banglore</h5>
+            </div>
+
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="image 1.jpeg" alt="">
+                </div>
+                <p>Studypool helped me so much this semester. I was really struggling in my classes and the workload for my pre-med major was really intense. I couldn't always make it to the lectures so the tutors here helped me understand concepts I had missed.
+                </p>
+                <h4>Jessica Jones</h4>
+                <h5>- St. Louis, MO</h5>
+            </div>
+
+        </a>
+        
+      </div>
+          
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+              $('.carousel').carousel({
+                padding: 200
+              });
+              autoplay();
+              function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4500);
+              }
+      });
+    </script>
+</body>
+</html>
